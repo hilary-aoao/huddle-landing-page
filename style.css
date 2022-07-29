@@ -1,0 +1,124 @@
+:root{
+    --violet:hsl(257, 40%, 49%);
+    --softMagenta:hsl(300, 69%, 71%);
+
+    --fw-primary-heading:600;
+    --fw-secondary-heading:400;
+    --fw-primary-body:400
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('images/bg-desktop.svg');
+    background-color: var(--violet);
+    color: white;
+    max-width: 1440px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+}
+header img{
+    margin: 50px 60px;
+}
+main{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    
+
+}
+main img{
+    width:45%;
+    margin-left: 60px;
+}
+main div{
+    width: 60%;
+}
+h1{
+    margin-top: 40px;
+    font-weight: var(--fw-primary-heading);
+    font-size: 35px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 13px;
+    opacity: 0.7;
+    width: 70%;
+}
+button{
+    margin-top: 30px;
+    padding: 12px 44px;
+    border-radius: 20px;
+    border: none;
+    color: var(--violet);
+    font-weight: var(--fw-primary-body);
+    font-size: 12px;
+    box-shadow: 2px 4px 3px rgb(0,0,0,0.4);
+    cursor: pointer;
+}    
+button:hover{
+    background-color: var(--softMagenta);
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+}
+i{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid;
+    
+}
+.book{
+    padding: 9px;
+}
+.tw{
+    padding: 8px;
+
+}
+i:hover{
+    color: var(--softMagenta);
+    cursor: pointer;
+}
+
+@media (max-width:990px){
+    header img{
+        width: 40%;
+    }
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    main img{
+        width: 70%;
+        margin-right: 50px;
+    }
+    h1{
+        width: 100%;
+        font-size: 26px;
+    }
+    p{
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    button{
+        padding: 10px 70px;
+    }
+    footer{
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+} 
